@@ -33,46 +33,170 @@
     </div>
 </nav>
   
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-         <h1>About Us</h1>
-         Welcome to Best Cars dealership, home to the best cars in North America. We deal in selling domestic and imported cars at reasonable prices.
+    
+<!-- Bootstrap 5 About Us Page -->
+
+<div class="container my-5">
+
+  <!-- Main About Card -->
+  <div class="card border-0 shadow-lg rounded-4 overflow-hidden">
+
+    <!-- Header -->
+    <div class="text-white text-center p-5" style="background-color: #172554;" >
+      <h1 class="display-4 fw-bold">About Best Cars</h1>
+
+      <h5 class="text-warning mb-3">
+        Your Trusted Car Dealership
+      </h5>
+
+      <p class="lead mx-auto" style="max-width: 800px;">
+        Welcome to Best Cars Dealership, home to the best cars in
+        North America. We specialize in selling quality domestic
+        and imported cars at reasonable prices. Our mission is to
+        make your dream car affordable and accessible.
+      </p>
+
+      <a href="/contact" class="btn btn-warning btn-lg mt-3">
+        Contact Us
+      </a>
+    </div>
+
+    <!-- Company Information -->
+    <div class="container py-5">
+      <div class="row text-center g-4">
+
+        <div class="col-md-4">
+          <div class="p-4 h-100 bg-light rounded-3">
+            <h2 class="text-warning">
+              <i class="bi bi-bullseye"></i>
+            </h2>
+            <h4 class="fw-bold">Our Mission</h4>
+            <p>
+              To provide high-quality vehicles at affordable
+              prices with excellent customer service.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-4 h-100 bg-light rounded-3">
+            <h2 class="text-warning">
+              <i class="bi bi-eye"></i>
+            </h2>
+            <h4 class="fw-bold">Our Vision</h4>
+            <p>
+              To become a leading car dealership known for
+              honesty, trust, and customer satisfaction.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="p-4 h-100 bg-light rounded-3">
+            <h2 class="text-warning">
+              <i class="bi bi-award"></i>
+            </h2>
+            <h4 class="fw-bold">Why Choose Us?</h4>
+            <p>
+              Quality vehicles, competitive prices, transparent
+              deals, and professional customer support.
+            </p>
+          </div>
+        </div>
 
       </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
+    </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
-        </div>
-      </div>
+    <!-- Team Heading -->
+    <div class="text-center py-4 bg-light">
+      <h2 class="fw-bold">Meet Our Team</h2>
+      <p class="text-muted">
+        Meet the professionals behind Best Cars Dealership.
+      </p>
+    </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+    <!-- Team Members -->
+    <div class="container py-5">
+      <div class="row g-4 justify-content-center">
+
+        <!-- Team Member 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow text-center">
+            <img src="/static/manager.jpg"
+                 class="card-img-top rounded-circle mx-auto mt-4"
+                 style="width:150px;height:150px;object-fit:cover;"
+                 alt="John Smith">
+
+            <div class="card-body">
+              <h5 class="fw-bold">John Smith</h5>
+              <p class="text-warning fw-bold">General Manager</p>
+              <p class="card-text text-muted">
+                John manages dealership operations and ensures
+                every customer receives excellent service.
+              </p>
+              <p class="small">john@example.com</p>
+            </div>
+          </div>
         </div>
+
+        <!-- Team Member 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow text-center">
+            <img src="/static/sale-manager.jpg"
+                 class="card-img-top rounded-circle mx-auto mt-4"
+                 style="width:150px;height:150px;object-fit:cover;"
+                 alt="Sarah Johnson">
+
+            <div class="card-body">
+              <h5 class="fw-bold">Sarah Johnson</h5>
+              <p class="text-warning fw-bold">Sales Manager</p>
+              <p class="card-text text-muted">
+                Sarah helps customers find the perfect vehicle
+                according to their preferences and budget.
+              </p>
+              <p class="small">sarah@example.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow text-center">
+            <img src="/static/support-person.jpg"
+                 class="card-img-top rounded-circle mx-auto mt-4"
+                 style="width:150px;height:150px;object-fit:cover;"
+                 alt="Michael Brown">
+
+            <div class="card-body">
+              <h5 class="fw-bold">Michael Brown</h5>
+              <p class="text-warning fw-bold">Customer Support</p>
+              <p class="card-text text-muted">
+                Michael provides customer assistance and
+                helps resolve vehicle-related inquiries.
+              </p>
+              <p class="small">michael@example.com</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+
+    <!-- Bottom Section -->
+    <div class="text-white text-center p-5" style="background-color: #172554;">
+      <h2 class="fw-bold">Looking for Your Dream Car?</h2>
+      <p class="lead">
+        Explore our collection and find your perfect vehicle today!
+      </p>
+
+      <a href="/contact" class="btn btn-warning btn-lg px-4">
+        Get In Touch
+      </a>
     </div>
-    </div>
+
+  </div>
+</div>
+
     
 </div>
 
