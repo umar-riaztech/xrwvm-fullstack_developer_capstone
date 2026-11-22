@@ -1,126 +1,230 @@
-img{
-  width: 60%;
-  align-self: center;
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
 }
 
-.card{
-  border: rgb(103, 102, 105) 3px solid;
-  display: flex;  
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.dealership-title {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding-right: 5%;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.dealership-title span {
+    font-size: 18px;
+}
+
+.dealership-title:hover {
+    color: #f5b400 !important;
+    transform: translateY(-2px);
+}
+
+.nav-link {
+    position: relative;
+    color: white !important;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom: 3px;
+    background-color: #FBBF24;
+    transform: translateX(-50%);
+    transition: width 0.5s ease;
+}
+
+.nav-link:hover {
+    color: #FBBF24 !important;
+}
+
+.nav-link:hover::after {
+    width: 80%;
+}
+
+.nav-link.active {
+    color: #FBBF24 !important;
+}
+
+.nav-link.active::after {
+    width: 80%;
+}
+/*Contact page html*/
+
+
+
+.main-container {
+    flex: 1;
+    width: 100%;
+    background-color: #172554;
+    color: white;
+}
+.main-container > .row {
+    min-height: 85vh;
+    margin: 0;
+    align-items: center;
+}
+
+.contact-left {
+  display: flex;
   flex-direction: column;
-  margin-left:5%;
-  margin-right:5%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
-
-.row{
-  display: flex;  
-  flex: 1;
-  flex-direction: row;
-  margin: auto;
-  margin-top: 1%;
   justify-content: center;
-  padding:20px;
+  padding-left: 80px;
+  padding-right: 40px;
 }
 
-.container{
-  justify-content: center;
-}
-.details{
-  font-size: 20px;
-  color: rgb(97, 64, 128);
-  padding:20px;
+
+.contact-left h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-.title{
-  font-size: 20px;
-  background-color: rgb(97, 64, 128);
-  color: white;
-  text-align: center;
-  margin:20px;
-  padding:5px;
+.contact-description {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #CBD5E1;
 }
 
-.homepage_links{
-  color:  rgb(97, 64, 128);
-  padding: 25%;
-  font-size: larger;
-  }
-
-.loginlink{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+.contact-left h6 {
+    margin-top: 20px;
+    font-size: 16px;
 }
 
-.banner{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex:1
+.support-link {
+    display: inline-block;
+    color: #FBBF24;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s ease;
 }
 
-.form_panel {
-  padding:2%;
-  display: flex;
-  flex-direction: column;
-  border-radius: 50px;
-  text-align:center;
-  box-shadow: 2px 2px 2px 3px #999;
-  margin: auto;
-  min-width: 350px;
-  width: 80%;
-  margin-top:3%;
-  background-color: black;
+.support-link:hover {
+    color: white;
+    text-decoration: underline;
 }
 
-.navitems{
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  flex: 1;
-  justify-content: flex-start;
-  justify-self: center;
+
+.contact-left .row h5 {
+    color: #FBBF24;
+    font-weight: 700;
 }
 
-.nav_item{
-  margin-left:15px;
-  font-size: 20px;
-  color: black;
-  align-self: center;
+.contact-left .row p {
+    color: #CBD5E1;
+    font-size: 14px;
 }
 
-.username{
-  font: 30px sans-serif;
-  color:black;
-  justify-content: 'flex-end';
-  align-self:flex-end;
-  vertical-align: middle;
+.contact-left .row .col-4 {
+    height: 100px;
+    padding: 15px;
+    border: 1px solid #475569;
+    border-radius: 10px;
+    background-color: #1E3A6D;
 }
 
-.input_panel {
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-  flex: 1;
-  justify-content:flex-end;
-  align-items: flex-end;
-  vertical-align: middle;
+.contact-right .form-field .form-control{
+  border-radius: 10px;
 }
 
-.small_header{
-  font: 30px sans-serif;
-  color:black;
-  margin: .5cm;
+/* Contact Form Card 
+}*/
+
+.contact-right {
+
+    background-color: #ffffff;
+    color: #172554;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+    
 }
 
-.img_icon {
-  align-self: center;
-    width:40px;
-    background-color:#0C9;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    box-shadow: 2px 2px 3px #999;  
+.contact-right h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
+
+.contact-right p {
+    color: #64748B;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+/* Form Fields */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-field .form-control {
+    padding: 13px 15px;
+    border: 1px solid #CBD5E1;
+    border-radius: 9px;
+    font-size: 14px;
+    background-color: #F8FAFC;
+    transition: 0.3s ease;
+}
+
+.form-field .form-control:focus {
+    border-color: #172554;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(23, 37, 84, 0.12);
+    outline: none;
+}
+
+.form-field textarea {
+    resize: none;
+    min-height: 130px;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 13px 20px;
+
+    background-color: #172554;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 25px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #FBBF24;
+    color: #172554;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.submit-btn span {
+    font-size: 20px;
+}
+
