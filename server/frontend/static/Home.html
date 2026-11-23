@@ -53,14 +53,357 @@ let checkSession = ()=>{
         </div>
     </div>
 </nav>
-<div style="display: flex;flex-direction: column;">
-<div class="card" style="width: 50%;margin-top: 50px;align-self: center;">
-  <img src="static/car_dealership.jpg" class="card-img-top" alt="...">
-  <div class="banner">
-    <h5>Welcome to our Dealerships!</h5>
-    <a href="/dealers" class="btn" style="background-color: aqua;margin:10px">View Dealerships</a>
+
+<!-- =========================
+     BEST CARS HOME PAGE
+     Bootstrap 5
+========================= -->
+
+<!-- HERO SECTION -->
+<section class="text-white"
+style="background-color:#172554;">
+
+  <div class="container py-5">
+
+    <div class="row align-items-center g-4">
+
+      <div class="col-lg-6">
+
+        <span class="badge bg-warning text-dark mb-3 p-2">
+          PREMIUM CAR DEALERSHIP
+        </span>
+
+        <h1 class="display-3 fw-bold">
+          DRIVE YOUR DREAM.
+          <span style="color:#FBBF24;">
+            LIVE THE LUXURY.
+          </span>
+        </h1>
+
+        <p class="lead text-light my-4">
+          Discover an exceptional collection of domestic
+          and imported vehicles. Quality, performance and
+          elegance come together at Best Cars.
+        </p>
+
+        <a href="/cars"
+           class="btn btn-warning btn-lg fw-bold px-4 me-2">
+          Explore Cars
+        </a>
+
+        <a href="/about"
+           class="btn btn-outline-light btn-lg px-4">
+          About Us
+        </a>
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <img
+          src="/static/images/hero-car.jpg"
+          class="img-fluid rounded-4 shadow-lg"
+          alt="Luxury car">
+
+      </div>
+
+    </div>
   </div>
-</div>
+</section>
+
+
+<!-- FEATURES SECTION -->
+<section class="container py-5">
+
+  <div class="row text-center g-4">
+
+    <div class="col-md-4">
+      <div class="p-4 rounded-4 shadow-sm h-100">
+
+        <i class="bi bi-car-front fs-1"
+           style="color:#172554;"></i>
+
+        <h4 class="fw-bold mt-3">Premium Cars</h4>
+
+        <p class="text-muted">
+          Explore our carefully selected collection
+          of quality vehicles.
+        </p>
+
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="p-4 rounded-4 shadow-sm h-100">
+
+        <i class="bi bi-cash-stack fs-1"
+           style="color:#172554;"></i>
+
+        <h4 class="fw-bold mt-3">Best Prices</h4>
+
+        <p class="text-muted">
+          Find excellent vehicles at competitive
+          and reasonable prices.
+        </p>
+
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="p-4 rounded-4 shadow-sm h-100">
+
+        <i class="bi bi-shield-check fs-1"
+           style="color:#172554;"></i>
+
+        <h4 class="fw-bold mt-3">Trusted Service</h4>
+
+        <p class="text-muted">
+          Enjoy a smooth and customer-focused
+          car buying experience.
+        </p>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CAR COLLECTION SECTION -->
+<section class="py-5 bg-light">
+
+  <div class="container">
+
+    <div class="text-center mb-5">
+
+      <span class="text-uppercase fw-bold"
+            style="color:#D99B13;">
+        OUR COLLECTION
+      </span>
+
+      <h2 class="display-5 fw-bold"
+          style="color:#172554;">
+        Explore Our Premium Cars
+      </h2>
+
+      <p class="text-muted">
+        Discover the perfect vehicle for your lifestyle.
+      </p>
+
+    </div>
+
+    <div class="row g-4">
+
+      <!-- CAR 1 -->
+      <div class="col-lg-4 col-md-6">
+
+        <div class="card border-0 shadow h-100">
+
+          <img
+            src="/static/images/BMW.jpg"
+            class="card-img-top"
+            style="height:230px;object-fit:cover;"
+            alt="Porsche sports car">
+
+          <div class="card-body">
+
+            <span class="badge bg-warning text-dark">
+              PREMIUM
+            </span>
+
+            <h5 class="fw-bold mt-3">
+              Luxury Sports Cars
+            </h5>
+
+            <p class="text-muted">
+              Experience powerful performance
+              and extraordinary design.
+            </p>
+
+            <a href="/cars"
+               class="btn btn-outline-dark w-100">
+              Explore Cars
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- CAR 2 -->
+      <div class="col-lg-4 col-md-6">
+
+        <div class="card border-0 shadow h-100">
+
+          <img
+            src="/static/images/suvs.jpg"
+            class="card-img-top"
+            style="height:230px;object-fit:cover;"
+            alt="Luxury SUV">
+
+          <div class="card-body">
+
+            <span class="badge bg-warning text-dark">
+              POPULAR
+            </span>
+
+            <h5 class="fw-bold mt-3">
+              Luxury SUVs
+            </h5>
+
+            <p class="text-muted">
+              Enjoy spacious interiors, comfort
+              and outstanding versatility.
+            </p>
+
+            <a href="/cars"
+               class="btn btn-outline-dark w-100">
+              Explore Cars
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- CAR 3 -->
+      <div class="col-lg-4 col-md-6">
+
+        <div class="card border-0 shadow h-100">
+
+          <img
+            src="/static/images/sedan.jpg"
+            class="card-img-top"
+            style="height:230px;object-fit:cover;"
+            alt="BMW sedan">
+
+          <div class="card-body">
+
+            <span class="badge bg-warning text-dark">
+              FEATURED
+            </span>
+
+            <h5 class="fw-bold mt-3">
+              Premium Sedans
+            </h5>
+
+            <p class="text-muted">
+              Discover refined styling, comfort
+              and advanced technology.
+            </p>
+
+            <a href="/cars"
+               class="btn btn-outline-dark w-100">
+              Explore Cars
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="container py-5">
+
+  <div class="row align-items-center g-4">
+
+    <div class="col-lg-6">
+
+      <img
+        src="/static/images/cars.jpeg"
+        class="img-fluid rounded-4 shadow"
+        alt="Car showroom">
+
+    </div>
+
+    <div class="col-lg-6">
+
+      <span class="fw-bold"
+            style="color:#D99B13;">
+        ABOUT BEST CARS
+      </span>
+
+      <h2 class="display-5 fw-bold"
+          style="color:#172554;">
+        More Than Just A Car Dealership
+      </h2>
+
+      <p class="text-muted">
+        Welcome to Best Cars, your trusted destination
+        for quality domestic and imported vehicles.
+        We believe that finding your dream car should
+        be simple, enjoyable and affordable.
+      </p>
+
+      <p class="text-muted">
+        Our commitment to quality, competitive pricing
+        and customer satisfaction makes us your partner
+        throughout your car buying journey.
+      </p>
+
+      <a href="/about"
+         class="btn btn-warning fw-bold px-4">
+        Discover Our Story
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CALL TO ACTION -->
+<section class="text-center text-white py-5"
+style="background-color:#172554;">
+
+  <div class="container">
+
+    <h2 class="display-5 fw-bold">
+      Ready To Find Your Dream Car?
+    </h2>
+
+    <p class="lead">
+      Your next journey begins with Best Cars.
+    </p>
+
+    <a href="/cars"
+       class="btn btn-warning btn-lg fw-bold px-5 mt-3">
+      Browse All Cars
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="text-white py-4"
+style="background-color:#101B3C;">
+
+  <div class="container text-center">
+
+    <h4 class="fw-bold">
+      BEST <span style="color:#FBBF24;">CARS</span>
+    </h4>
+
+    <p class="text-light">
+      Quality Cars. Better Prices. Trusted Service.
+    </p>
+
+    <hr class="border-secondary">
+
+    <p class="small mb-0">
+      © 2026 Best Cars Dealership. All Rights Reserved.
+    </p>
+
+  </div>
+
+</footer>
+
 </div>
 </body>
 </html>
