@@ -1,131 +1,75 @@
 
-/* ======================================
-   PREMIUM DEALERSHIP NAVBAR
-====================================== */
-
-:root {
-    --navy: #172554;
-    --navy-light: #243b70;
-    --gold: #FBBF24;
-    --gold-hover: #f59e0b;
-    --white: #ffffff;
-}
-
-/* Navbar */
+/* =====================================
+   CONSISTENT PREMIUM DEALERSHIP NAVBAR
+===================================== */
 
 .navbar.navbar-expand-lg {
-    background: var(--navy) !important;
-    min-height: 60px;
-    height: auto !important;
-    padding: 8px 4%;
-
+    background-color: #172554 !important;
+    height: 76px !important;
+    min-height: 76px !important;
+    padding: 0 4% !important;
     border-bottom: 2px solid rgba(251, 191, 36, 0.7);
-
     box-shadow: 0 4px 20px rgba(23, 37, 84, 0.18);
-
     position: relative;
     z-index: 1000;
 }
 
 .navbar .container-fluid {
     max-width: 1450px;
+    height: 100%;
     margin: auto;
+    display: flex;
+    align-items: center;
 }
-
-/* Dealership Brand */
 
 .dealership-title {
     font-size: 21px;
     font-weight: 800;
     letter-spacing: 1.2px;
-
-    color: var(--white);
-
+    color: #ffffff;
     padding-right: 5%;
     margin: 0;
-
     cursor: pointer;
-
     transition: all 0.3s ease;
 }
 
 .dealership-title span {
-    color: var(--gold) !important;
-    font-size: 20px;
-    display: inline-block;
-
-    transition: transform 0.3s ease;
+    color: #FBBF24 !important;
 }
-
-.dealership-title:hover {
-    color: var(--gold) !important;
-    transform: translateY(-2px);
-}
-
-.dealership-title:hover span {
-    transform: rotate(45deg);
-}
-
-/* Navigation Links */
 
 .navbar-nav {
     gap: 12px;
 }
 
 .navbar .nav-link {
-    position: relative;
-
     color: #e2e8f0 !important;
-
     font-size: 14px;
     font-weight: 600;
-
     padding: 12px 16px !important;
-
-    transition: color 0.3s ease;
+    position: relative;
 }
 
-/* Gold Underline */
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #FBBF24 !important;
+}
 
 .navbar .nav-link::after {
     content: "";
-
     position: absolute;
-
     width: 0;
     height: 2px;
-
     left: 50%;
     bottom: 5px;
-
-    background: var(--gold);
-
+    background: #FBBF24;
     transform: translateX(-50%);
-
     transition: width 0.3s ease;
 }
 
-.navbar .nav-link:hover {
-    color: var(--gold) !important;
-}
-
-.navbar .nav-link:hover::after {
-    width: 75%;
-}
-
-/* Active Navigation */
-
-.navbar .nav-link.active {
-    color: var(--gold) !important;
-}
-
+.navbar .nav-link:hover::after,
 .navbar .nav-link.active::after {
     width: 75%;
 }
-
-/* Login Area */
-
-/* Login & Register Button Layout */
 
 #loginlogout {
     display: flex;
@@ -133,79 +77,26 @@
     gap: 10px;
 }
 
-/* Login Button - Navy with Gold Border */
-
-#loginlogout a.homepage_links:first-of-type {
-    background: transparent !important;
-    color: #FBBF24 !important;
-
+#loginlogout a.homepage_links {
     border: 1.5px solid #FBBF24;
     border-radius: 8px;
-
     padding: 10px 23px;
-
     font-size: 14px;
     font-weight: 700;
-
     text-decoration: none;
-    transition: all 0.3s ease;
+    color: #FBBF24 !important;
 }
-
-/* Login Hover */
-
-#loginlogout a.homepage_links:first-of-type:hover {
-    background: #FBBF24 !important;
-    color: #172554 !important;
-
-    transform: translateY(-2px);
-}
-
-/* Register Button - Gold Background */
 
 #loginlogout a.homepage_links:last-of-type {
     background: #FBBF24 !important;
     color: #172554 !important;
-
-    border: 1.5px solid #FBBF24;
-    border-radius: 8px;
-
-    padding: 10px 23px;
-
-    font-size: 14px;
-    font-weight: 800;
-
-    text-decoration: none;
-    transition: all 0.3s ease;
 }
-
-/* Register Hover */
-
-#loginlogout a.homepage_links:last-of-type:hover {
-    background: #f59e0b !important;
-    border-color: #f59e0b !important;
-
-    transform: translateY(-2px);
-}
-
-/* Mobile */
-
-@media (max-width: 991px) {
-    #loginlogout {
-        justify-content: flex-start;
-        flex-wrap: wrap;
-    }
-}
-
-
-/* Username */
 
 .username {
-    color: var(--white) !important;
+    color: #ffffff !important;
     font-size: 12px;
     font-weight: 600;
 }
-
-/* User Panel */
 
 .input_panel {
     display: flex;
@@ -213,55 +104,21 @@
     gap: 15px;
 }
 
-/* Logout */
-
-.input_panel .nav_item {
-    padding: 9px 20px;
-
-    color: var(--gold) !important;
-    background: transparent;
-
-    border: 1px solid var(--gold);
-    border-radius: 8px;
-
-    font-size: 13px;
-    font-weight: 700;
-
-    text-decoration: none;
-
-    transition: all 0.3s ease;
-}
-
-.input_panel .nav_item:hover {
-    background: var(--gold);
-    color: var(--navy) !important;
-}
-
-/* Mobile Toggle */
-
 .navbar-toggler {
-    border: 1px solid rgba(251, 191, 36, 0.6) !important;
-    padding: 7px 10px;
-    border-radius: 8px;
-
+    border: 1px solid #FBBF24 !important;
     box-shadow: none !important;
 }
-
-.navbar-toggler:focus {
-    box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.2) !important;
-}
-
-/* Mobile Responsive */
 
 @media (max-width: 991px) {
 
     .navbar.navbar-expand-lg {
-        padding: 12px 5%;
+        height: auto !important;
+        min-height: 65px !important;
+        padding: 10px 5% !important;
     }
 
-    .dealership-title {
-        font-size: 20px;
-        padding-right: 0;
+    .navbar .container-fluid {
+        height: auto;
     }
 
     .navbar-collapse {
@@ -280,39 +137,10 @@
         display: none;
     }
 
-    .navbar .nav-link:hover {
-        background: rgba(251, 191, 36, 0.1);
-        border-radius: 7px;
-    }
-
-    .navbar-text {
-        display: block;
-        padding-top: 12px;
-    }
-
     #loginlogout {
-        justify-content: flex-start;
+        flex-wrap: wrap;
     }
 }
-
-/* Small Mobile */
-
-@media (max-width: 480px) {
-
-    .dealership-title {
-        font-size: 18px;
-    }
-
-    .dealership-title span {
-        font-size: 17px;
-    }
-
-    .loginlink .nav_item {
-        padding: 9px 18px;
-    }
-}
-
-/* Reduced Motion */
 
 @media (prefers-reduced-motion: reduce) {
     .navbar *,

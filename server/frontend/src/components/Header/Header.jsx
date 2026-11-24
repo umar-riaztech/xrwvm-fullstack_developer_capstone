@@ -40,10 +40,6 @@ if ( curr_user !== null &&  curr_user !== "") {
         <div>
           <nav
       className="navbar navbar-expand-lg navbar-dark"
-      style={{
-        backgroundColor: "#172554",
-        height: "60px"
-      }}
     >
       <div className="container-fluid">
 
