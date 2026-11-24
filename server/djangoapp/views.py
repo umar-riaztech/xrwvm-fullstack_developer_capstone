@@ -1,12 +1,12 @@
 # Uncomment the required imports before adding the code
 
-# from django.shortcuts import render
-# from django.http import HttpResponseRedirect, HttpResponse
-# from django.contrib.auth.models import User
-# from django.shortcuts import get_object_or_404, render, redirect
-# from django.contrib.auth import logout
-# from django.contrib import messages
-# from datetime import datetime
+from django.shortcuts import render
+from django.http import HttpResponseRedirect, HttpResponse
+from django.contrib.auth.models import User
+from django.shortcuts import get_object_or_404, render, redirect
+from django.contrib.auth import logout
+from django.contrib import messages
+from datetime import datetime
 
 from django.http import JsonResponse
 from django.contrib.auth import login, authenticate
@@ -42,10 +42,58 @@ def login_user(request):
 # def logout_request(request):
 # ...
 
+
+def logout_request(request):
+    logout(request)
+    data = {"userName": ""}
+    return JsonResponse(data)
+
 # Create a `registration` view to handle sign up request
 # @csrf_exempt
 # def registration(request):
 # ...
+
+@csrf_exempt
+def registration(request):
+    if request.method != "POST":
+        return JsonResponse({"error": "POST request required"}, status=405)
+
+    try:
+        data = json.loads(request.body)
+
+        username = data['userName']
+        password = data['password']
+        first_name = data['firstName']
+        last_name = data['lastName']
+        email = data['email']
+
+        # Check whether username already exists
+        if User.objects.filter(username=username).exists():
+            return JsonResponse({
+                "userName": username,
+                "error": "Already Registered"
+            })
+
+        # Create the new user
+        user = User.objects.create_user(
+            username=username,
+            first_name=first_name,
+            last_name=last_name,
+            password=password,
+            email=email
+        )
+
+        # Automatically log in the new user
+        login(request, user)
+
+        return JsonResponse({
+            "userName": username,
+            "status": "Authenticated"
+        })
+
+    except (KeyError, ValueError, TypeError):
+        return JsonResponse({"error": "Invalid registration data"}, status=400)
+
 
 # # Update the `get_dealerships` view to render the index page with
 # a list of dealerships
